@@ -3,16 +3,15 @@ import requests
 
 html_text = requests.get('https://www.reuters.com/news/archive/us-the-wire?view=page&page=2&pageSize=10').text
 soup = BeautifulSoup(html_text, 'lxml')
-articles = soup.find_all('article', class_ = 'story')
+articles = soup.find('div', class_ = 'news-headline-list').find_all('article')
 
+last_ten = []
 
-# Title
-print(articles[0].h3.text.strip())
+for article in articles:
+    info = {}
+    info['title'] = article.h3.text.strip()
+    info['content'] = article.p.text.strip()
+    info['link'] = f"reuters.com{article.find('div', class_ = 'story-content').a['href']}"
+    last_ten.append(info)
 
-# News story
-print(articles[0].p.text.strip())
-
-# Link to story
-# articles[0].find('div', class_ = 'story-content').a['href']
-
-print(f"reuters.com{articles[0].find('div', class_ = 'story-content').a['href']}")
+print(last_ten[0])
