@@ -10,14 +10,16 @@ articles = soup.find('div', class_ = 'news-headline-list').find_all('article')
 
 last_ten = []
 
+prompt_message = 'The following is a list, that repeats three sets of information related to a news story, containing title, the content, and link to the news story, int that order. Condense this information into a briefing format to be read by someone in five minutes or less. When necessary, provide the links or further information for context on specific stories. Think about: What should the reader know about to better understand these stories? What information should they read more about if they are interested it? What could be the impact of these new stories? Why is this news important?' 
+
 for article in articles:
-    info = {}
-    info['title'] = article.h3.text.strip()
-    info['content'] = article.p.text.strip()
-    info['link'] = f"reuters.com{article.find('div', class_ = 'story-content').a['href']}"
-    last_ten.append(info)
+    last_ten.append(article.h3.text.strip())
+    last_ten.append(article.p.text.strip())
+    last_ten.append(f"reuters.com{article.find('div', class_ = 'story-content').a['href']}")
 
-print(last_ten[0])
 
-chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Hello world"}])
-print(chat_completion)
+last_ten.insert(0, prompt_message)
+
+print(last_ten)
+# chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": ', '.join(last_ten)}])
+# print(chat_completion)
