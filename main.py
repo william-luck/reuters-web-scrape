@@ -10,7 +10,7 @@ articles = soup.find('div', class_ = 'news-headline-list').find_all('article')
 
 last_ten = []
 
-prompt_message = 'The following is JSON data, that repeats three sets of information related to a news story, containing title, the content, and link to the news story, int that order. Condense this information into a briefing format to be read by someone in five minutes or less. Group the ten stories into groups / categories. When necessary, provide the links or further information for context on specific stories. On each story, provide some background information to help the reader better understand the issue.'
+prompt_message = 'The following is JSON data, that repeats three sets of information related to a news story, containing title, the content, and link to the news story, in that order. Condense this information into a briefing format to be read by someone in five minutes or less. Group the ten stories into groups / categories. On each story, provide some helpful background information you create, to help the reader better understand the issue.'
 
 for article in articles:
     article_info = {}
