@@ -1,5 +1,5 @@
 {
-  "posts": [
+  "articles": [
     {
       "content": "blablabla",
       "id": 1
@@ -63,6 +63,29 @@
       "content": "U.S. investors are awaiting a slew of initial public offerings (IPO) in coming months, hoping to ride the recent rally in equity markets.",
       "link": "reuters.com/article/usa-ipos/factbox-u-s-ipo-market-poised-for-strong-finish-in-2023-amid-a-flurry-of-listings-idUSKBN30D0PP",
       "id": 11
+    }
+  ],
+  "analysis": [
+    {
+      "id": "chatcmpl-7wBqS5aLv88CwptqjOVwLePovtWME",
+      "object": "chat.completion",
+      "created": 1694102912,
+      "model": "gpt-3.5-turbo-0613",
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "Briefing:\n\n1. Gabon junta names former PM Raymond Ndong Sima as interim PM - statement:\nGabon's military junta has appointed Raymond Ndong Sima, a former prime minister, as the country's new interim prime minister. This decision was announced on national television by the junta. [Link for more information: reuters.com/article/gabon-security-politics/gabon-junta-names-former-pm-raymond-ndong-sima-as-interim-pm-statement-idUSKBN30D1DG]\n\n2. Mexican core inflation slows more than expected to 20-month low:\nAnnual core inflation in Mexico has decreased to a 20-month low in August, according to data from statistics agency INEGI. This slowdown in inflation is below market forecasts and can be attributed to the country's central bank maintaining interest rates to control price increases. [Link for more information: reuters.com/article/mexico-economy-inflation/mexican-core-inflation-slows-more-than-expected-to-20-month-low-idUSKBN30D13E]\n\n3. Ukraine tycoon Kolomoisky is suspect in second criminal case - lawmaker:\nUkrainian anti-corruption authorities suspect tycoon Ihor Kolomoisky of being involved in the embezzlement of $250 million. This accusation deals a potentially significant blow to one of the country's wealthiest individuals. [Link for more information: reuters.com/article/ukraine-crisis-kolomoisky/ukraine-tycoon-kolomoisky-is-suspect-in-second-criminal-case-lawmaker-idUSKBN30D13A]\n\n4. Austria summons EU envoy for calling Russian gas payments 'blood money':\nAustria's Foreign Ministry is calling in the European Commission's envoy for criticizing the slow pace at which Austria is reducing its dependence on Russian gas. The envoy stated that Austria is paying \"blood money\" for the fuel. [Link for more information: reuters.com/article/ukraine-crisis-gas-austria/austria-summons-eu-envoy-for-calling-russian-gas-payments-blood-money-idUSKBN30D1CZ]\n\n5. Goldman Sachs lawyer says suit by Russia's Otkritie Bank should be heard in London:\nA lawyer representing Goldman Sachs argued in a Moscow court that a $6.3 million lawsuit filed by Russia's Otkritie Bank should be heard in London instead. The lawsuit raises legal questions regarding jurisdiction. [Link for more information: reuters.com/article/goldman-sachs-russia-court/goldman-sachs-lawyer-says-suit-by-russias-otkritie-bank-should-be-heard-in-london-idUSKBN30D1CO]\n\n6. Lula calls for unity as he attends Brazil's Independence Day parade:\nFormer President Luiz Inacio Lula da Silva participated in Brazil's Independence Day parade and called for citizens to unite around common goals. He aims to end the politicization of the armed forces, which gained momentum during his right-wing predecessor's tenure. [Link for more information: reuters.com/article/brazil-independenceday/lula-calls-for-unity-as-he-attends-brazils-independence-day-parade-idUSKBN30D0F6]\n\n7. French-Turkish teen biker declared brain-dead after police car chase, collision:\nA 16-year-old boy of Turkish descent collided with a police car under disputed circumstances, resulting in him being declared brain-dead. The French government has called for calm in response to the incident. [Link for more information: reuters.com/article/france-security/french-turkish-teen-biker-declared-brain-dead-after-police-car-chase-collision-idUSKBN30D0C9]\n\n8. UN offers to support Gabon for transition back to civilian rule:\nThe United Nations has offered its support to Gabon as the country transitions back to constitutional order after a coup ended the Bongo family's 56 years of dynastic autocracy. The UN institutions stand ready to assist in this process. [Link for more information: reuters.com/article/gabon-security/un-offers-to-support-gabon-for-transition-back-to-civilian-rule-idUSKBN30D0KU]\n\n9. Walmart cuts starting pay for some new hires - WSJ:\nAccording to the Wall Street Journal, Walmart has reduced the starting pay for certain new store workers compared to three months ago. This move indicates a change in the company's compensation structure. \n\n10. Russian businessman gets 9 years in US prison for hack-and-trade scheme:\nA Russian businessman with ties to the Kremlin has been sentenced to nine years in a U.S. prison for participating in a $93 million insider-trading scheme. The scheme involved hacked secret earnings information from multiple companies."
+          },
+          "finish_reason": "stop"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1244,
+        "completion_tokens": 996,
+        "total_tokens": 2240
+      }
     }
   ]
 }

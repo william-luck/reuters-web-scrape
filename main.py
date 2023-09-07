@@ -10,7 +10,7 @@ articles = soup.find('div', class_ = 'news-headline-list').find_all('article')
 
 last_ten = []
 
-prompt_message = 'The following is a list, that repeats three sets of information related to a news story, containing title, the content, and link to the news story, int that order. Condense this information into a briefing format to be read by someone in five minutes or less. When necessary, provide the links or further information for context on specific stories. Think about: What should the reader know about to better understand these stories? What information should they read more about if they are interested it? What could be the impact of these new stories? Why is this news important?' 
+prompt_message = 'The following is JSON data, that repeats three sets of information related to a news story, containing title, the content, and link to the news story, int that order. Condense this information into a briefing format to be read by someone in five minutes or less. Group the ten stories into groups / categories. When necessary, provide the links or further information for context on specific stories. On each story, provide some background information to help the reader better understand the issue.'
 
 for article in articles:
     article_info = {}
@@ -23,17 +23,18 @@ for article in articles:
     # last_ten.append(f"reuters.com{article.find('div', class_ = 'story-content').a['href']}")
     last_ten.append(article_info)
 
-
-# last_ten.insert(0, prompt_message)
-
+# print(last_ten)
 
 
-for article in last_ten: 
-    print(article)
-    print('')
-    requests.post('http://localhost:3000/posts', json = article)
+# Populates database with last ten news stories 
+# for article in last_ten: 
+#     print(article)
+#     print('')
+#     requests.post('http://localhost:3000/articles', json = article)
 
+# Sends to chatGPT 
+last_ten.insert(0, prompt_message)
+chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": str(last_ten)}])
 
-
-# chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": ', '.join(last_ten)}])
-# print(chat_completion)
+requests.post('http://localhost:3000/analysis', json = chat_completion)
+print(chat_completion)
