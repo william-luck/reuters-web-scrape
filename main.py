@@ -18,23 +18,16 @@ for article in articles:
     article_info['title'] = article.h3.text.strip()
     article_info['content'] = article.p.text.strip()
     article_info['link'] = f"reuters.com{article.find('div', class_ = 'story-content').a['href']}"
-    # last_ten.append(article.h3.text.strip())
-    # last_ten.append(article.p.text.strip())
-    # last_ten.append(f"reuters.com{article.find('div', class_ = 'story-content').a['href']}")
     last_ten.append(article_info)
 
-# print(last_ten)
-
-
 # Populates database with last ten news stories 
-# for article in last_ten: 
-#     print(article)
-#     print('')
-#     requests.post('http://localhost:3000/articles', json = article)
+for article in last_ten: 
+    print(article)
+    print('')
+    requests.post('http://localhost:3000/articles', json = article)
 
 # Sends to chatGPT 
-last_ten.insert(0, prompt_message)
-chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": str(last_ten)}])
-
-requests.post('http://localhost:3000/analysis', json = chat_completion)
-print(chat_completion)
+# last_ten.insert(0, prompt_message)
+# chat_completion = openai.ChatCompletion.create(model="gpt-4", messages=[{"role": "user", "content": str(last_ten)}])
+# requests.post('http://localhost:3000/analysis', json = chat_completion)
+# print(chat_completion)

@@ -12,16 +12,26 @@ function Home() {
 
     async function getArticles(): Promise<any> {
         try {
-            const response = await fetch('http://localhost:3000/analysis');
+            const response = await fetch('http://localhost:3000/articles');
             
             if (!response.ok) {
                 throw new Error(`Error, status: ${response.status}`);
             }
             const articles = await response.json();
-            setArticleData(articles[0].choices[0].message.content.split('\n'))
+            setArticleData(articles)
         } catch (error: any) {
             console.error('Failed to fetch articles:', error.message);
         }
+    }
+
+    function articleContent(data: any) {
+        return (
+            <>
+                <h3>{data.title}</h3>
+                <p>{data.content}</p>
+                <br></br>
+            </>
+        )
     }
 
     return (
@@ -31,9 +41,8 @@ function Home() {
             <div>
                 <div>
                     {articleData.length > 0 ? 
-                        articleData.map(newLine => <p>{newLine}</p>)
+                        articleData.map(article => articleContent(article))
                         : null}
-                    
                 </div>
             </div>
         </>
