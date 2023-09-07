@@ -20,6 +20,10 @@ for article in articles:
 
 last_ten.insert(0, prompt_message)
 
-print(last_ten)
+
+
+
+
+
 # chat_completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": ', '.join(last_ten)}])
 # print(chat_completion)
