@@ -3,6 +3,66 @@
     {
       "content": "blablabla",
       "id": 1
+    },
+    {
+      "title": "Walmart cuts starting pay for some new hires - WSJ",
+      "content": "Walmart is paying some new store workers less than it would have three months ago, the Wall Street Journal reported on Thursday.",
+      "link": "reuters.com/article/walmart-wages/walmart-cuts-starting-pay-for-some-new-hires-wsj-idUSKBN30D19G",
+      "id": 2
+    },
+    {
+      "title": "Factbox-Key dates on Trump's overlapping legal and political calendars",
+      "content": "Former U.S. President Donald Trump faces a tangled calendar in the year ahead as he seeks the 2024 Republican nomination while trying to fend off four criminal and three civil trials, some related to his attempts to overturn his 2020 loss.",
+      "link": "reuters.com/article/usa-trump-dates/factbox-key-dates-on-trumps-overlapping-legal-and-political-calendars-idUSKBN2ZR1EG",
+      "id": 3
+    },
+    {
+      "title": "Shunning global summits, Xi visits flood-stricken area in northeast China",
+      "content": "Eschewing face-time with foreign leaders at global summits this week, Chinese President Xi Jinping on Thursday visited the homes of villagers in a rural part of northeast China battered by floods.",
+      "link": "reuters.com/article/china-politics-xi/shunning-global-summits-xi-visits-flood-stricken-area-in-northeast-china-idUSKBN30D17H",
+      "id": 4
+    },
+    {
+      "title": "Russian businessman gets 9 years in US prison for hack-and-trade scheme",
+      "content": "A Russian businessman with ties to the Kremlin was sentenced on Thursday to nine years in a U.S. prison after being convicted of participating in a $93 million insider-trading scheme involving hacked secret earnings information about multiple companies.",
+      "link": "reuters.com/article/usa-russia-insidertrading-crime/russian-businessman-gets-9-years-in-us-prison-for-hack-and-trade-scheme-idUSKBN30D18Y",
+      "id": 5
+    },
+    {
+      "title": "French teenager dies after collision with police car, government urges calm",
+      "content": "PARIS (Reuters) -The French government on Thursday called for calm following the death of a 16-year-old boy whose motorbike collided with a police car on a road outside Paris.",
+      "link": "reuters.com/article/france-security/french-teenager-dies-after-collision-with-police-car-government-urges-calm-idUSKBN30D0C9",
+      "id": 6
+    },
+    {
+      "title": "Boeing will meet 737 delivery goal despite new production problem -CFO",
+      "content": "WASHINGTON xx (Reuters) -Boeing is set to meet targets to deliver at least 400 narrowbody 737s this year, its chief financial officer said on Thursday, despite a recently discovered production flaw that has slowed deliveries of its bestselling 737 MAX.",
+      "link": "reuters.com/article/boeing-cfo/boeing-will-meet-737-delivery-goal-despite-new-production-problem-cfo-idUSKBN30D14O",
+      "id": 7
+    },
+    {
+      "title": "Exclusive-Kurdish-led Syria force vows to meet tribal demands after clash",
+      "content": "The head of the U.S.-backed Syrian Democratic Forces (SDF) pledged to meet Arab tribal demands in eastern Syria and fix \"mistakes\" he said had been made in administering the region, seeking to defuse tensions that fuelled days of deadly fighting.",
+      "link": "reuters.com/article/syria-security-kurds-arabs/exclusive-kurdish-led-syria-force-vows-to-meet-tribal-demands-after-clash-idUSKBN30D18V",
+      "id": 8
+    },
+    {
+      "title": "Ukraine reports Danube port damage after latest Russian attack",
+      "content": "KYIV (Reuters) -Russia carried out its fourth drone attack in five days on Ukrainian port facilities on the Danube River on Thursday, damaging grain silos and other infrastructure on a vital export route for Kyiv, Ukrainian officials said.",
+      "link": "reuters.com/article/ukraine-crisis-odesa-drones/ukraine-reports-danube-port-damage-after-latest-russian-attack-idUSKBN30D080",
+      "id": 9
+    },
+    {
+      "title": "Russians vote in tightly controlled regional elections",
+      "content": "Russians finish voting on Sunday in tightly controlled regional and local elections that are likely to be interpreted by authorities as a vote of confidence in President Vladimir Putin.",
+      "link": "reuters.com/article/ukraine-crisis-russia-election/russians-vote-in-tightly-controlled-regional-elections-idUSKBN30D11U",
+      "id": 10
+    },
+    {
+      "title": "Factbox-U.S IPO market poised for strong finish in 2023 amid a flurry of listings",
+      "content": "U.S. investors are awaiting a slew of initial public offerings (IPO) in coming months, hoping to ride the recent rally in equity markets.",
+      "link": "reuters.com/article/usa-ipos/factbox-u-s-ipo-market-poised-for-strong-finish-in-2023-amid-a-flurry-of-listings-idUSKBN30D0PP",
+      "id": 11
     }
   ]
 }
